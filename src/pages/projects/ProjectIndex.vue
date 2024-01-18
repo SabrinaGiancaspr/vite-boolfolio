@@ -14,6 +14,7 @@ export default{
     methods: {
         fetchData(){
             axios.get('http://127.0.0.1:8000/api/projects').then((res) => {
+                console.log(res)
                this.projects = res.data.results.data
             })
         }
@@ -32,7 +33,6 @@ export default{
                 <ProjectCard :project="project"/>
             </div>
         </div>
-       
     </div>
 
 </template>

@@ -1,15 +1,17 @@
 <script>
-import ProjectIndex from './pages/projects/ProjectIndex.vue';
+import ProjectIndex from './pages/projects/projectindex.vue';
+import Portfolio from './views/Portfolio.vue';
 export default{
   components: {
-    ProjectIndex
+    ProjectIndex,
+    Portfolio,
   }
 }
 </script>
 
 <template>
-  <div>
-    <ProjectIndex/>
+  <div id="app">
+    <router-view />
   </div>
 </template>
 
